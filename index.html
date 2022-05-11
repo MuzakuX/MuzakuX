@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Lawrence Mason</title>
+    <div class="header">
+    <img class="profile_picture" src="img/main_photo.jpg">
+    <h1>Lawrence Mason</h1>
+    <h2>Student Web Designer</h2>
+    <p class="about_me">I am currently learning basic web design and will be expanding
+        into other areas of software engineering and design. <br>My passion
+        lies in creation, between models and websites, I just like to
+        make anything.
+    </p>
+    </div>
+</head>
+<body>
+    <div class="row">
+    <h2>Skills</h2> 
+        <div class="html">
+        <h2 class="skills">Html</h2> 
+        <ul class="html_skill">
+            <li>web design</li>
+            <li>magic powers</li>
+            <li>the newest best coder</li>
+        </ul>        
+        </div>
+        <div class="css_skills">
+        <h2 class="skills2">CSS</h2>
+        <ul class="css_skills2">
+            <li>Creativity</li>
+            <li>introspection</li>
+            <li>a new meaning of beauty</li> 
+        </ul>
+        </div>
+        <div class="javascript">
+        <h2 class="skills3">Javascript (Coming Soon)</h2>
+        <ul class="javascript_skills">
+            <li>Never before seen experiences (probably)</li>
+            <li>An unknown computer ability (maybe)</li>
+            <li>and some other 3rd thing (definitely)</li>
+        </ul>
+        </div>
+    </div>
+
+    <h2 class="hobbies">Hobbies</h2>
+    <p class="hobby_paragraph">During the height of the Covid Pandemic, I found myself with a lot more time, and needed something to do.
+        I discovered model making, and it instantly became a passion of mine. <br>Please enjoy a small collection of works I have created below.</p>
+<!-- Slideshow Code-->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="img/amazingexia.jpg" style="width:100%">
+              <div class="text">YJL 1/100 Amazing Exia</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="img/hinu.jpg" style="width:100%">
+              <div class="text">RG 1/144 Hi-V Rx-93</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="img/sinanju.jpg" style="width:100%">
+              <div class="text">Takumi Studio MG 1/100 Sinanju</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="img/zaku.jpg" style="width:100%">
+                <div class="text">YJL 1/100 Zaku</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="img/abandonedrx78.jpg" style="width:100%">
+                <div class="text">Abandoned RX-78-2 Diorama</div>
+              </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+          <!--End of Slideshow Code-->
+</body>
+<!--Slideshow Script-->
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
+</html>
