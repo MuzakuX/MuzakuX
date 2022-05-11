@@ -3,9 +3,8 @@
     max-width: 200px;
     max-height: 200px;    
     border: 5px solid white;
-    margin-left: 100px;
-    margin-right: auto;
-    margin-top: 75px;
+    display:block;
+    margin: 0 auto;
     position: relative;
     
 }
@@ -52,13 +51,15 @@ h2{
 p{
     text-align: center;
 }
-{box-sizing:border-box}
+
+
 
 /*-- slideshow coding --*/
 .slideshow-container {
   max-width: 600px;
   position: relative;
   margin: auto;
+  box-sizing:border-box;
 }
 .mySlides {
   display: none;
