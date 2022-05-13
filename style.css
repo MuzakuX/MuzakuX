@@ -4,13 +4,13 @@
     max-height: 200px;    
     border: 5px solid white;
     display:block;
-    margin: 0 auto;
+    margin: 50px auto 10px;
     position: relative;
     
 }
 body{
     background-color: #CAE7DF;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Questrial,sans-serif;
 }
   
 .about_me{
@@ -21,6 +21,8 @@ body{
     margin-right: auto;
     margin-left: auto;
     justify-content: space-evenly;
+    font-size: 16px;
+    line-height: 1.6;
 }
 .skills{
     margin: 100px;
@@ -56,17 +58,22 @@ p{
     border:2px solid #717171;
     width:300px;
     background-image: linear-gradient(aliceblue, #D3D3D3);
+    line-height: 1.6;
+    font-size:16px;
 }
 
 .css_skills{
     width:300px;
     border:2px solid #717171;
     background-image: linear-gradient(aliceblue, #D3D3D3);
+    line-height: 1.6;
+    font-size:16px;
 }
 .javascript{
 border:2px solid #717171;
 width:300px;
 background-image: linear-gradient(aliceblue, #D3D3D3);
+
 }
 
 footer{
