@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="english">
 <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/71132d9f1e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image.png" href="img/mb.png">
     <title>Lawrence Mason</title>
-    <div class="header">
-    <img class="profile_picture" src="img/main_photo.jpg">
-    <h1>Lawrence Mason</h1>
-    <h2>Student Web Designer</h2>
-    <p class="about_me">I am currently learning basic web design and will be expanding
-        into other areas of software engineering and design. <br>My passion
-        lies in creation, between models and websites, I just like to
-        make anything.
-    </p>
     
-    </div>
 </head>
 <body>
-    
-    <h2>Skills</h2> 
+
+    <div class="topnav">
+        <a href="#about_me">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+      </div>
+
+    <div class="header">
+        <div class="pfp">
+        <img class="profile_picture" src="img/main_photo.jpg"></div>
+        <h1>Lawrence Mason</h1>
+        <a name="about_me"></a>
+        <h2>Student Web Designer</h2> </a>
+        <p class="about_me">I am currently learning basic web design and will be expanding
+            into other areas of software engineering and design. <br>My passion
+            lies in creation, between models and websites, I just like to
+            make anything. 
+        </p>
+       
+        </div>
+    <a name="skills">
+    <h2>Skills</h2> </a>
     <div class="row">
- 
         <div class="html">
+            <i class="fa-solid fa-computer" style="transform:scale(6)" style:="position:relative"></i>
         <h2 class="skills">Html</h2> 
         <ul class="html_skill">
             <li>web design</li>
@@ -30,6 +43,7 @@
         </ul>        
         </div>
         <div class="css_skills">
+            <i class="fa-solid fa-brush" style="transform:scale(6)"></i>
         <h2 class="skills2">CSS</h2>
         <ul class="css_skills2">
             <li>Creativity</li>
@@ -38,6 +52,7 @@
         </ul>
         </div>
         <div class="javascript">
+            <i class="fa-solid fa-scroll" style="transform:scale(6)"></i>
         <h2 class="skills3">Javascript (Coming Soon)</h2>
         <ul class="javascript_skills">
             <li>Never before seen experiences (probably)</li>
@@ -46,8 +61,8 @@
         </ul>
         </div>
     </div>
-
-    <h2 class="hobbies">Hobbies</h2>
+    <a name="hobbies">
+    <h2 class="hobbies">Hobbies</h2></a>
     <p class="hobby_paragraph">During the height of the Covid Pandemic, I found myself with a lot more time, and needed something to do.
         I discovered model making, and it instantly became a passion of mine. <br>Please enjoy a small collection of works I have created below.</p>
 <!-- Slideshow Code-->
@@ -97,11 +112,16 @@
           <!--End of Slideshow Code-->
           <p class="slideshow_para">For a full colleciton of my works, please check out my <a link href="http://instagram.com/muzakubuilds/" target="blank">Instagram</a>
     <footer>
-        <a link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">Youtube</a>
-        <a link href="https://instagram.com/muzakubuilds/" target="_blank">Instagram</a>
-        <a link href="https://previews.123rf.com/images/lighthunter/lighthunter1307/lighthunter130700535/20794784-pieds-de-femme-propre-et-sain-isol%C3%A9-sur-blanc-.jpg" target="_blank">Copywright Information</a>
+        <a class="social-icon" link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+            <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+        <a class="social-icon" link href="https://instagram.com/muzakubuilds/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a link href="https://www.artslaw.com.au/information-sheet/contracts-a-glossary-of-jargon/#:~:text=When%20negotiating%2C%20discussing%2C%20entering%20or,or%20arguing%20about%20an%20agreement." target="_blank">Copywright Information</a>
     </footer>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 <!--Slideshow Script-->
 <script>

@@ -3,18 +3,39 @@
     max-width: 200px;
     max-height: 200px;    
     border: 5px solid white;
-    display:block;
     margin: 50px auto 10px;
+    display: inline-block;
+}
+.pfp{
     position: relative;
-    
+    width: 100%;
+    text-align: center
+}
+.header{
+    background-color: #40927b;
+    ;
+    padding:0;
+    margin:0;
+    position:relative;
 }
 body{
     background-color: #CAE7DF;
-    font-family: Questrial,sans-serif;
+    font-family: sans-serif;
+    margin:0;
 }
-  
+ .topnav a{
+     display:inline-block;
+     width:15%;
+     color:whitesmoke
+     
+ } 
+ .topnav{
+     background-color: #144235;
+     text-align: center;
+ }
 .about_me{
     font-size: 15px;
+    padding-bottom: 10px;
 }
 .row{
     display: flex;
@@ -31,7 +52,7 @@ body{
     margin: 100px;
 }
 .skills3{
-    margin: 75px 100px 50px 100px;
+    margin: 110px 100px -9px 100px;
 }
 
 .skills_heading{
@@ -42,7 +63,10 @@ body{
 h1{
     text-align: center;
     margin: 10px 0px 20px;
-}
+    color: whitesmoke;
+    opacity: 95%;
+    font-size: 42px;
+}   
 h2{
     text-align: center;
     font-style: italic;
@@ -61,7 +85,9 @@ p{
     line-height: 1.6;
     font-size:16px;
 }
-
+.html span{
+    
+}
 .css_skills{
     width:300px;
     border:2px solid #717171;
@@ -75,13 +101,41 @@ width:300px;
 background-image: linear-gradient(aliceblue, #D3D3D3);
 
 }
-
-footer{
+footer a{
+    display:inline-block;
+    width:25%;
+}
+    footer{
     text-align: center;
     background-color: #717171;
+    padding:15px;
+    transition: color 0.2s;
+    color: #40927b;
+   
 }
 footer :hover{
     color:white;
+}
+
+.row .material-icons{
+   font-size:100px;
+   margin-left:auto;
+}
+.fa-computer:before {
+    content: "\e4e5";
+    position: absolute;
+    margin-left: 17px;
+}
+.fa-brush:before {
+    content: "\f55d";
+    position: absolute;
+    margin-left: 19px;
+}
+.fa-scroll:before {
+    content: "\f70e";
+    position: absolute;
+    margin-left: 16px;
+    margin-top: -1px;
 }
 /*-- slideshow coding --*/
 .slideshow-container {
@@ -151,4 +205,5 @@ footer :hover{
   from {opacity: .4}
   to {opacity: 1}
 }
+
 /* End Slideshow Coding */
